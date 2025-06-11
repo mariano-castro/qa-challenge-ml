@@ -1,0 +1,32 @@
+{
+  "name": "qa-challenge-ml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "test:report": "cypress run --browser chrome --reporter mochawesome --reporter-options reportDir=mochawesome-report,overwrite=false,html=false,json=true && npx mochawesome-merge mochawesome-report/*.json > mochawesome-report/tmp.json && npx marge mochawesome-report/tmp.json --reportDir mochawesome-report --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariano-castro/qa-challenge-ml.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mariano-castro/qa-challenge-ml/issues"
+  },
+  "homepage": "https://github.com/mariano-castro/qa-challenge-ml#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.1.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
+    "cypress": "^14.4.1",
+    "esbuild": "^0.25.5",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
