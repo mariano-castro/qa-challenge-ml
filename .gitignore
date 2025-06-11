@@ -18,3 +18,6 @@ Thumbs.db
 # Env files
 .env
 .env.*
+
+# Reports
+mochawesome-report/

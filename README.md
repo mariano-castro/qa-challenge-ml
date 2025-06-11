@@ -25,5 +25,4 @@ Project to automate UI and API tests with Cypress using Cucumber (Gherkin) and t
 6. Run the tests in Firefox:
     npm run test:firefox
 
-5. Run the tests with reports:
-    npm run test:report
+- Reports will be generated in the path mochawesome-report/mochawesome.html
