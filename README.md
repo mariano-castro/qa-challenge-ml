@@ -8,7 +8,7 @@ This project automates UI and API tests using **Cypress**, **Cucumber (Gherkin)*
 ## 🚀 Installation
 
 1. Clone the repository:
-    git clone https://github.com/mariano-castro/qa-mercadolibre.git
+    `git clone https://github.com/mariano-castro/qa-mercadolibre.git`
 
 2. Install the dependencies:
     `npm install`
