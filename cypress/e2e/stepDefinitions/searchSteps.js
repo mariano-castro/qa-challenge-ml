@@ -6,8 +6,7 @@ const homePage = new HomePage();
 const resultPage = new ResultPage();
 
 Given("I'm on the MercadoLibre homepage", () => {
-  cy.visit("/");
-  cy.intercept({ resourceType: /xhr|fetch/ }, { log: false });
+  homePage.visitHomePage();
 });
 
 When("I search for the product {string}", (product) => {

@@ -5,6 +5,11 @@ const elements = {
 
 
 class HomePage {
+  visitHomePage() {
+    cy.visit("/");
+    cy.intercept({ resourceType: /xhr|fetch/ }, { log: false });
+  }
+
   searchProduct(product) {
     cy.get(elements.searchInput).type(product);
     cy.get(elements.searchButton).click();
